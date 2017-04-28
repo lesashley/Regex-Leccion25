@@ -1,10 +1,10 @@
-var dato = document.getElementsByClassName("input")[3];
-document.getElementsByClassName("button")[0].addEventListener("click",function () {
+var contraseña2 = document.getElementsByClassName("input")[7];
+contraseña2.addEventListener("blur",function () {
+  var contraseña1 = document.getElementsByClassName("input")[6];
+  if (contraseña1.value == contraseña2.value) {
+    document.getElementById("button").removeAttribute("disabled");
+  }
+  else if (contraseña1.value != contraseña2.value){
+    document.getElementById("button").setAttribute("disabled", true)
+  }
 })
-
-var date = new Date();
-var day = date.getDate();
-var month = date.getMonth() + 1 ;
-var year = date.getFullYear();
-
-// var n = dato.value.split("-");

@@ -1,14 +1,31 @@
+body{
+  text-align: center;
+}
+
 form{
-text-align: left;
-margin-left: 35%;
-font-family: 'Open Sans', sans-serif;
+  width: 400px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  border: 3px solid rgb(3, 93, 126);
+  border-radius: 20px;
+  padding: 10px 5px;
 }
 input{
-  margin: 5px 0;
+  margin: 10px 0;
 }
 label{
   display: inline-block;
   width: 130px;
+  text-align: left;
+}
+.n{
+  margin-left: 48px;
+  width: 90px;
+  float: left;
+}
+textarea{
+  margin: 10px;
+  width: 170px;
 }
 .terminos{
   width: 280px;
@@ -16,4 +33,19 @@ label{
 }
 #button{
   padding: 5px 10px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px ;
+  background-color: rgb(3, 93, 126);
+  color: white;
+  width: 100px;
+}
+#button:hover{
+  background-color: white;
+  color: rgb(3, 93, 126);
+}
+::placeholder{
+  font-family: 'Open Sans', sans-serif;
 }
